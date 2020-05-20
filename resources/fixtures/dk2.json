@@ -1,0 +1,11 @@
+{
+    "title": "Donkey Kong II",
+    "category": "Super Nintendo",
+    "price": "99.99",
+    "description": "Um jogo muito divertido.",
+    "producers": [
+        "Nintendo",
+        "Rare"
+    ],
+    "cover": "donkey-kong2.jpg"
+}
