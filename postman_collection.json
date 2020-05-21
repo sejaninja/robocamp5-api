@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "2673c535-b023-4dbb-b112-2903c85c1fee",
+		"name": "Pixel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a new product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwaXJlIjoiMjAyMC0wNS0yMFQwNzoyNTozMC4xNTArMDA6MDAifQ.0GYfT26s6sVrXoGhhC1cI3D3RPItVWPfilN69P3fIEk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Donkey Kong Country 2\",\n  \"category\": \"Super Nintendo\",\n  \"producers\": [\"Nintendo\", \"Rare\"], \n  \"price\": \"199.99\", \n  \"description\": \"É pura diversão com este clássico de plataforma 2D.\",\n  \"cover\": \"donkey-kong.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pixel-api:3333/products",
+					"protocol": "http",
+					"host": [
+						"pixel-api"
+					],
+					"port": "3333",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"papito@ninjapixel.com\",\r\n  \"password\": \"pwd123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pixel-api:3333/auth",
+					"protocol": "http",
+					"host": [
+						"pixel-api"
+					],
+					"port": "3333",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Unique Product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwaXJlIjoiMjAyMC0wNS0yMFQwNzoyNTozMC4xNTArMDA6MDAifQ.0GYfT26s6sVrXoGhhC1cI3D3RPItVWPfilN69P3fIEk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://pixel-api:3333/products/147",
+					"protocol": "http",
+					"host": [
+						"pixel-api"
+					],
+					"port": "3333",
+					"path": [
+						"products",
+						"147"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwaXJlIjoiMjAyMC0wNS0yMFQwNzoyNTozMC4xNTArMDA6MDAifQ.0GYfT26s6sVrXoGhhC1cI3D3RPItVWPfilN69P3fIEk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://pixel-api:3333/products/147",
+					"protocol": "http",
+					"host": [
+						"pixel-api"
+					],
+					"port": "3333",
+					"path": [
+						"products",
+						"147"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwaXJlIjoiMjAyMC0wNS0yMFQwNzoyNTozMC4xNTArMDA6MDAifQ.0GYfT26s6sVrXoGhhC1cI3D3RPItVWPfilN69P3fIEk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Donkey Kong 3\",\n  \"category\": \"Super Nintendo\",\n  \"producers\": [\"Nintendo\", \"Rare\"], \n  \"price\": \"199.99\", \n  \"description\": \"É pura diversão com este clássico de plataforma 2D.\",\n  \"cover\": \"donkey-kong.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pixel-api:3333/products/148",
+					"protocol": "http",
+					"host": [
+						"pixel-api"
+					],
+					"port": "3333",
+					"path": [
+						"products",
+						"148"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

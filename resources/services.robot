@@ -50,6 +50,14 @@ Get Product
 
     [return]          ${resp}
 
+Get Products
+    Create Session    pixel               ${base_url}
+    &{headers}=       Create Dictionary   Authorization=${token}      Content-Type=application/json
+
+    ${resp}=          Get Request      pixel       /products     headers=${headers}
+
+    [return]          ${resp}
+
 Delete Product
     [Arguments]     ${id}
 
