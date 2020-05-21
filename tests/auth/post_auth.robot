@@ -6,12 +6,14 @@ Resource            ../../resources/services.robot
 
 ***Test Cases***
 Successfuly Login
+    [tags]      todo
     ${payload}=     ????
 
     ${resp}=        Post Token     ${payload}
     Status Should Be        200     ${resp}
 
-Incorrect Passoword
+Incorrect Password
+    [tags]      todo
     ${payload}=     ????
 
     ${resp}=        Post Token     ${payload}

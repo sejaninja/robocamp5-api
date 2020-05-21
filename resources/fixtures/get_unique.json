@@ -1,0 +1,10 @@
+{
+    "title": "NeoGeo",
+    "category": "Consoles",
+    "price": "299.99",
+    "description": "32 bits só rico que tinha.",
+    "producers": [
+        "NeoGeo"
+    ],
+    "cover": "neogeo.jpg"
+}
