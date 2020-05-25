@@ -6,16 +6,14 @@ Resource            ../../resources/services.robot
 
 ***Test Cases***
 Successfuly Login
-    [tags]      todo
-    ${payload}=     ????
+    [tags]      success
 
-    ${resp}=        Post Token     ${payload}
+    ${resp}=        Post Token      papito@ninjapixel.com    pwd123
     Status Should Be        200     ${resp}
 
 Incorrect Password
-    [tags]      todo
-    ${payload}=     ????
-
-    ${resp}=        Post Token     ${payload}
+    [tags]      not_authorized
+    
+    ${resp}=        Post Token      papito@ninjapixel.com   abc123
     Status Should Be        401     ${resp}
 
