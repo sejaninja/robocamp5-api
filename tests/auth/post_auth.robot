@@ -9,7 +9,7 @@ Successfuly Login
     [tags]      success
 
     ${resp}=        Post Token      papito@ninjapixel.com    pwd123
-    Status Should Be        201     ${resp}
+    Status Should Be        200     ${resp}
 
 Incorrect Password
     [tags]      not_authorized
