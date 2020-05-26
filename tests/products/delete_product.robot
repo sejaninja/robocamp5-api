@@ -23,4 +23,4 @@ Product Not Found
     [tags]      not_found
 
     ${resp}=            Delete Product     1500
-    Status Should Be    404                ${resp}
+    Status Should Be    204                ${resp}
