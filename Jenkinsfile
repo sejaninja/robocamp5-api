@@ -22,5 +22,11 @@ pipeline {
              }
           }
       }
+      stage('UAT') {
+         steps {
+            echo 'Simulando a aprovação do PO'
+            input(message: 'Você aprova essa versão?', ok: 'Sim :)')
+         }
+      }
    }
 }
