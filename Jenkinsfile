@@ -9,11 +9,7 @@ pipeline {
    stages {
       stage('Build') {
          steps {
-            sh 'pip install robotframework'
-            sh 'pip install robotframework-requests'
-            sh 'pip install robotframework-jsonlibrary'
-            sh 'pip install psycopg2'
-            sh 'pip install requests'
+            sh 'pip install -r requirements.txt'
          }
       }
       stage('Testing') {
